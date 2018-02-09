@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:schema="http://schema.org/"
+	xmlns:eli="http://data.europa.eu/eli/ontology#"
+	xmlns:adms="http://www.w3.org/ns/adms#"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml/vocab#"
+	xmlns:cv="http://data.europa.eu/m8g/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:vann="http://purl.org/vocab/vann/"
+	xmlns:locn="http://www.w3.org/ns/locn#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cpsv="http://purl.org/vocab/cpsv#">
+
+<rdf:Description rdf:about="http://ps.uri">
+	<rdf:type rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+	<dct:title>PSURI</dct:title>
+	<dct:description>Psdescr</dct:description>
+	<dcat:keyword>kw</dcat:keyword>
+	<cv:sector rdf:resource="http://127.0.0.1:3362/se"/>
+	<dct:type rdf:resource="http://127.0.0.1:3362/pst"/>
+	<dct:language rdf:resource="http://127.0.0.1:3362/psl"/>
+	<adms:status rdf:resource="http://127.0.0.1:3362/pss"/>
+	<cv:isGroupedBy rdf:resource="http://127.0.0.1:3362/psigb"/>
+	<dct:requires rdf:resource="http://127.0.0.1:3362/psr"/>
+	<dct:relation rdf:resource="http://127.0.0.1:3362/psr2"/>
+	<cv:hasCriterion rdf:resource="http://127.0.0.1:3362/pshc"/>
+	<cv:hasCompetentAuthority rdf:resource="http://127.0.0.1:3362/pshca"/>
+	<cv:hasParticipation rdf:resource="http://127.0.0.1:3362/pshp"/>
+	<cpsv:hasInput rdf:resource="http://127.0.0.1:3362/pshi"/>
+	<cv:hasFormalFramework rdf:resource="http://127.0.0.1:3362/pshff"/>
+	<cpsv:produces rdf:resource="http://127.0.0.1:3362/psp"/>
+	<cpsv:follows rdf:resource="http://127.0.0.1:3362/psf"/>
+	<dct:spatial rdf:resource="http://127.0.0.1:3362/pss"/>
+	<cv:hasContactPoint rdf:resource="http://127.0.0.1:3362/pshcp"/>
+	<cv:hasChannel rdf:resource="http://127.0.0.1:3362/pshc"/>
+	<cv:processingTime rdf:resource="http://127.0.0.1:3362/pspt"/>
+	<cv:hasCost rdf:resource="http://127.0.0.1:3362/pshc"/>
+	<cv:isDescribedAt rdf:resource="http://127.0.0.1:3362/psida"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://be.uri">
+	<rdf:type rdf:resource="http://data.europa.eu/m8g/BusinessEvent"/>
+	<dct:title>ben</dct:title>
+	<dct:description>bed</dct:description>
+	<dct:type rdf:resource="http://127.0.0.1:3362/bet"/>
+	<dct:relation rdf:resource="http://127.0.0.1:3362/bers"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://le.uri">
+	<rdf:type rdf:resource="http://data.europa.eu/m8g/LifeEvent"/>
+	<dct:title>len</dct:title>
+	<dct:description>led</dct:description>
+	<dct:type rdf:resource="http://127.0.0.1:3362/let"/>
+	<dct:relation rdf:resource="http://127.0.0.1:3362/lers"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://psd.uri">
+	<rdf:type rdf:resource="http://data.europa.eu/m8g/PublicServiceDataset"/>
+	<dct:publisher rdf:resource="http://127.0.0.1:3362/psdp"/>
+	<dct:title>psdn</dct:title>
+	<dcat:landingPage rdf:resource="http://127.0.0.1:3362/psdlp"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://p.uri">
+	<rdf:type rdf:resource="http://data.europa.eu/m8g/Participation"/>
+	<dct:description>pd</dct:description>
+	<cv:role rdf:resource="http://127.0.0.1:3362/pr"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://c.uri">
+	<rdf:type rdf:resource="http://data.europa.eu/m8g/CriterionRequirement"/>
+	<dct:title>cn</dct:title>
+	<dct:type rdf:resource="http://127.0.0.1:3362/ct"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://e.uri">
+	<dct:title>en</dct:title>
+	<dct:description>ed</dct:description>
+	<dct:type rdf:resource="http://127.0.0.1:3362/et"/>
+	<foaf:page rdf:resource="http://127.0.0.1:3362/erd"/>
+	<dct:language rdf:resource="http://127.0.0.1:3362/el"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://o.uri">
+	<dct:title>on</dct:title>
+	<dct:description>od</dct:description>
+	<dct:type rdf:resource="http://127.0.0.1:3362/ot"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://c.uri">
+	<cv:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">cv</cv:value>
+	<cv:currency rdf:resource="http://127.0.0.1:3362/cc"/>
+	<dct:description>cd</dct:description>
+	<cv:isDefinedBy rdf:resource="http://127.0.0.1:3362/cidb"/>
+	<cv:ifAccessedThrough rdf:resource="http://127.0.0.1:3362/ciat"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ch.uri">
+	<rdf:type rdf:resource="http://data.europa.eu/m8g/Channel"/>
+	<cv:ownedBy rdf:resource="http://127.0.0.1:3362/chob"/>
+	<dct:type rdf:resource="http://127.0.0.1:3362/cht"/>
+	<cpsv:hasInput rdf:resource="http://127.0.0.1:3362/chhi"/>
+	<schema:openingHours>choh</schema:openingHours>
+	<schema:hoursAvailable rdf:resource="http://127.0.0.1:3362/choar"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://oh.uri">
+	<rdf:type rdf:resource="http://schema.org/OpeningHoursSpecification"/>
+	<schema:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">ohvf</schema:validFrom>
+	<schema:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">ohvt</schema:validThrough>
+	<schema:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">oho</schema:opens>
+	<schema:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">ohc</schema:closes>
+	<schema:dayOfWeek rdf:resource="http://127.0.0.1:3362/ohdow"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://r.uri">
+	<rdf:type rdf:resource="http://purl.org/vocab/cpsv#Rule"/>
+	<dct:description>rd</dct:description>
+	<dct:language rdf:resource="http://127.0.0.1:3362/rl"/>
+	<dct:title>rn</dct:title>
+	<cpsv:implements rdf:resource="http://127.0.0.1:3362/ri"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ff.uri">
+	<rdf:type rdf:resource="http://purl.org/vocab/cpsv#FormalFramework"/>
+	<dct:title>ffn</dct:title>
+	<dct:description>ffd</dct:description>
+	<eli:language rdf:resource="http://127.0.0.1:3362/ffl"/>
+	<adms:status rdf:resource="http://127.0.0.1:3362/ffs"/>
+	<cv:subject rdf:resource="http://127.0.0.1:3362/ffsu"/>
+	<cv:territorialApplication rdf:resource="http://127.0.0.1:3362/ffta"/>
+	<dct:type rdf:resource="http://127.0.0.1:3362/fft"/>
+	<dct:relation rdf:resource="http://127.0.0.1:3362/ffr"/>
+	<schema:name>ffn</schema:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://a.uri">
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<dct:title>an</dct:title>
+	<cv:playsRole rdf:resource="http://127.0.0.1:3362/apr"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://127.0.0.1:3362/EC">
+	<rdf:type rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
+	<dct:title>EC</dct:title>
+	<skos:altLabel>Authority</skos:altLabel>
+	<org:identifier>Authority</org:identifier>
+	<dct:description>EC</dct:description>
+	<dct:spatial rdf:resource="http://127.0.0.1:3362/EC"/>
+	<org:purpose rdf:resource="http://127.0.0.1:3362/EC2"/>
+	<org:classification rdf:resource="http://adress.europa.eu"/>
+	<foaf:homepage rdf:resource="http://127.0.0.1:3362/%C2%A0htt"/>
+	<schema:logo rdf:resource="http://127.0.0.1:3362/ec"/>
+	<org:hasSubOrganization rdf:resource="http://127.0.0.1:3362/ec"/>
+	<org:subOrganizationOf rdf:resource="http://127.0.0.1:3362/ec"/>
+	<schema:contactPoint rdf:resource="http://c.uri"/>
+	<org:unitOf rdf:resource="http://127.0.0.1:3362/unitof"/>
+	<org:hasUnit rdf:resource="http://127.0.0.1:3362/hasunit"/>
+	<org:hasMember rdf:resource="http://127.0.0.1:3362/hm"/>
+	<org:memberOf rdf:resource="http://127.0.0.1:3362/mo"/>
+	<org:originalOrganization rdf:resource="http://127.0.0.1:3362/oo"/>
+	<org:resultingOrganization rdf:resource="http://127.0.0.1:3362/ro"/>
+	<xhtml:prev rdf:resource="http://127.0.0.1:3362/previous"/>
+	<xhtml:next rdf:resource="http://127.0.0.1:3362/next"/>
+	<cv:playsRole rdf:resource="http://127.0.0.1:3362/EC"/>
+	<cv:hasAddress rdf:resource="http://127.0.0.1:3362/EC"/>
+	<skos:prefLabel>EC</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ce.uri">
+	<rdf:type rdf:resource="http://www.w3.org/ns/org#ChangeEvent"/>
+	<org:resultingOrganization rdf:resource="http://127.0.0.1:3362/ro"/>
+	<org:resultedFrom rdf:resource="http://127.0.0.1:3362/rf"/>
+	<org:originalOrganization rdf:resource="http://127.0.0.1:3362/oo"/>
+	<org:changedBy rdf:resource="http://127.0.0.1:3362/cb"/>
+	<cpsv:implements rdf:resource="http://127.0.0.1:3362/im"/>
+	<cv:hasFormalFramework rdf:resource="http://127.0.0.1:3362/hff"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ff.uri">
+	<dct:title>name</dct:title>
+	<schema:name>name</schema:name>
+	<org:identifier rdf:resource="http://127.0.0.1:3362/id"/>
+	<cpsv:implements rdf:resource="http://127.0.0.1:3362/im"/>
+	<cv:hasFormalFramework rdf:resource="http://127.0.0.1:3362/hff"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://c.uri">
+	<rdf:type rdf:resource="http://schema.org/ContactPoint"/>
+	<schema:email>ce</schema:email>
+	<schema:telephone>ct</schema:telephone>
+	<schema:hoursAvailable rdf:resource="http://127.0.0.1:3362/cha"/>
+</rdf:Description>
+
+</rdf:RDF>

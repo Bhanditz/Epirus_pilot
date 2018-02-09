@@ -1,0 +1,1701 @@
+[
+  
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://127.0.0.1:3362/",
+      "prefixes": [
+        {
+          "name": "schema",
+          "uri": "http://schema.org/"
+        },
+		{
+          "name": "xhtml",
+          "uri": "http://www.w3.org/1999/xhtml/vocab#"
+        },
+		
+        {
+          "name": "eli",
+          "uri": "http://data.europa.eu/eli/ontology#"
+        },
+		 {
+          "name": "org",
+          "uri": "http://www.w3.org/ns/org#"
+        },
+        {
+          "name": "adms",
+          "uri": "http://www.w3.org/ns/adms#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "cv",
+          "uri": "http://data.europa.eu/m8g/"
+        },
+        {
+          "name": "dct",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "vann",
+          "uri": "http://purl.org/vocab/vann/"
+        },
+        {
+          "name": "locn",
+          "uri": "http://www.w3.org/ns/locn#"
+        },
+        {
+          "name": "dcat",
+          "uri": "http://www.w3.org/ns/dcat#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "cpsv",
+          "uri": "http://purl.org/vocab/cpsv#"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "PSURI",
+          "rdfTypes": [
+            {
+              "uri": "http://purl.org/vocab/cpsv#PublicService",
+              "curie": "cpsv:PublicService"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Description"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/dcat#keyword",
+              "curie": "dcat:keyword",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Keyword"
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/sector",
+              "curie": "cv:sector",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Sector",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/type",
+              "curie": "dct:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/language",
+              "curie": "dct:language",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Language",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/adms#status",
+              "curie": "adms:status",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Status",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/isGroupedBy",
+              "curie": "cv:isGroupedBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Is Grouped By",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/requires",
+              "curie": "dct:requires",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Requires",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/relation",
+              "curie": "dct:relation",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Related",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/hasCriterion",
+              "curie": "cv:hasCriterion",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Has Criterion",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/hasCompetentAuthority",
+              "curie": "cv:hasCompetentAuthority",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Has Competent Authority",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/hasParticipation",
+              "curie": "cv:hasParticipation",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Has Participation",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/vocab/cpsv#hasInput",
+              "curie": "cpsv:hasInput",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Has Input",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/hasFormalFramework",
+              "curie": "cv:hasFormalFramework",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Has Formal Framework",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/vocab/cpsv#produces",
+              "curie": "cpsv:produces",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Produces",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/vocab/cpsv#follows",
+              "curie": "cpsv:follows",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Follows",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/spatial",
+              "curie": "dct:spatial",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Spatial",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/hasContactPoint",
+              "curie": "cv:hasContactPoint",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Has Contact Point",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/hasChannel",
+              "curie": "cv:hasChannel",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Has Channel",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/processingTime",
+              "curie": "cv:processingTime",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Processing Time",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/hasCost",
+              "curie": "cv:hasCost",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Has Cost",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/isDescribedAt",
+              "curie": "cv:isDescribedAt",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Is Described At",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "BEURI",
+          "rdfTypes": [
+            {
+              "uri": "http://data.europa.eu/m8g/BusinessEvent",
+              "curie": "cv:BusinessEvent"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Description"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/type",
+              "curie": "dct:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/relation",
+              "curie": "dct:relation",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Related service",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "LEURI",
+          "rdfTypes": [
+            {
+              "uri": "http://data.europa.eu/m8g/LifeEvent",
+              "curie": "cv:LifeEvent"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Description"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/type",
+              "curie": "dct:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/relation",
+              "curie": "dct:relation",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Related service",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "PSDURI",
+          "rdfTypes": [
+            {
+              "uri": "http://data.europa.eu/m8g/PublicServiceDataset",
+              "curie": "cv:PublicServiceDataset"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/publisher",
+              "curie": "dct:publisher",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Publisher",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/dcat#landingPage",
+              "curie": "dcat:landingPage",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Landing Page",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "ParticipationURI",
+          "rdfTypes": [
+            {
+              "uri": "http://data.europa.eu/m8g/Participation",
+              "curie": "cv:Participation"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Description"
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/role",
+              "curie": "cv:role",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Role",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "CriterionURI",
+          "rdfTypes": [
+            {
+              "uri": "http://data.europa.eu/m8g/CriterionRequirement",
+              "curie": "cv:CriterionRequirement"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/type",
+              "curie": "dct:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "EvidenceURI",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Description"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/type",
+              "curie": "dct:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://xmlns.com/foaf/0.1/page",
+              "curie": "foaf:page",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Related Documentation",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/language",
+              "curie": "dct:language",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Language",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "OutputURI",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Description"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/type",
+              "curie": "dct:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "CostURI",
+          "rdfTypes": [],
+          "links": [
+            {
+              "uri": "http://data.europa.eu/m8g/value",
+              "curie": "cv:value",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#double",
+                "columnName": "Value"
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/currency",
+              "curie": "cv:currency",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Currency",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Description"
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/isDefinedBy",
+              "curie": "cv:isDefinedBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Is Defined by",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/ifAccessedThrough",
+              "curie": "cv:ifAccessedThrough",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "if Accessed Through",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "ChannelURI",
+          "rdfTypes": [
+            {
+              "uri": "http://data.europa.eu/m8g/Channel",
+              "curie": "cv:Channel"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://data.europa.eu/m8g/ownedBy",
+              "curie": "cv:ownedBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Owned By",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/type",
+              "curie": "dct:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/vocab/cpsv#hasInput",
+              "curie": "cpsv:hasInput",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Has Input",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://schema.org/openingHours",
+              "curie": "schema:openingHours",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Opening Hours"
+              }
+            },
+            {
+              "uri": "http://schema.org/hoursAvailable",
+              "curie": "schema:hoursAvailable",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Availability Restriction",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "OpeningHoursURI",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/OpeningHoursSpecification",
+              "curie": "schema:OpeningHoursSpecification"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://schema.org/validFrom",
+              "curie": "schema:validFrom",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "Valid From"
+              }
+            },
+            {
+              "uri": "http://schema.org/validThrough",
+              "curie": "schema:validThrough",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "Valid Through"
+              }
+            },
+            {
+              "uri": "http://schema.org/opens",
+              "curie": "schema:opens",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "Opens"
+              }
+            },
+            {
+              "uri": "http://schema.org/closes",
+              "curie": "schema:closes",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "columnName": "Closes"
+              }
+            },
+            {
+              "uri": "http://schema.org/dayOfWeek",
+              "curie": "schema:dayOfWeek",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Day of week",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "RuleURI",
+          "rdfTypes": [
+            {
+              "uri": "http://purl.org/vocab/cpsv#Rule",
+              "curie": "cpsv:Rule"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Description"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/language",
+              "curie": "dct:language",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Language",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://purl.org/vocab/cpsv#implements",
+              "curie": "cpsv:implements",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Implements",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "FormalFrameworkURI",
+          "rdfTypes": [
+            {
+              "uri": "http://purl.org/vocab/cpsv#FormalFramework",
+              "curie": "cpsv:FormalFramework"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Description"
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/eli/ontology#language",
+              "curie": "eli:language",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Language",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/adms#status",
+              "curie": "adms:status",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Status",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/subject",
+              "curie": "cv:subject",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Subject",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/territorialApplication",
+              "curie": "cv:territorialApplication",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Territorial Application",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/type",
+              "curie": "dct:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/relation",
+              "curie": "dct:relation",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Related",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "AgentURI",
+          "rdfTypes": [
+            {
+              "uri": "http://purl.org/dc/terms/Agent",
+              "curie": "dct:Agent"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/type",
+              "curie": "dct:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/playsRole",
+              "curie": "cv:playsRole",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Plays Role",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/hasAddress",
+              "curie": "cv:hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "hasAddress",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+		{
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "ContactPoint",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/ContactPoint",
+              "curie": "schema:ContactPoint"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://schema.org/email",
+              "curie": "schema:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "hasEmail"
+              }
+            }
+			]
+		},
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "PublicOrganisationURI",
+          "rdfTypes": [
+            {
+              "uri": "http://data.europa.eu/m8g/PublicOrganisation",
+              "curie": "cv:PublicOrganisation"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://purl.org/dc/terms/title",
+              "curie": "dct:title",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/type",
+              "curie": "dct:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Type",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/2004/02/skos/core#altLabel",
+              "curie": "skos:altLabel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "altLabel",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/ns/org#identifier",
+              "curie": "org:identifier",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Identifier",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			 {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "PODescription"
+              }
+            },
+			{
+              "uri": "http://purl.org/dc/terms/spatial",
+              "curie": "dct:spatial",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Spatial",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/ns/org#purpose",
+              "curie": "org:purpose",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Purpose",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/org#classification",
+              "curie": "org:classification",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Classification",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://xmlns.com/foaf/0.1/homepage",
+              "curie": "foaf:homepage",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Homepage",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://schema.org/logo",
+              "curie": "schema:logo",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Logo",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/ns/org#hasSubOrganization",
+              "curie": "org:hasSubOrganization",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "hasSubOrganization",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/ns/org#subOrganizationOf",
+              "curie": "org:subOrganizationOf",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "subOrganizationOf",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			  {
+              "uri": "http://schema.org/contactPoint",
+              "curie": "schema:contactPoint",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "contactPoint",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			 {
+              "uri": "http://www.w3.org/ns/org#unitOf",
+              "curie": "org:unitOf",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "unitOf",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			 {
+              "uri": "http://www.w3.org/ns/org#hasUnit",
+              "curie": "org:hasUnit",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "hasUnit",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			 {
+              "uri": "http://www.w3.org/ns/org#hasMember",
+              "curie": "org:hasMember",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "hasMember",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/ns/org#memberOf",
+              "curie": "org:memberOf",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "memberOf",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/ns/org#resultedFrom",
+              "curie": "org:resultedFrom",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "resultedFrom",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/ns/org#changedBy",
+              "curie": "org:changedBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "changedBy",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/ns/org#originalOrganization",
+              "curie": "org:originalOrganization",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "originalOrganization",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			
+			{
+              "uri": "http://www.w3.org/ns/org#resultingOrganization",
+              "curie": "org:changedBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "resultingOrganization",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/1999/xhtml/vocab#prev",
+              "curie": "xhtml:prev",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "prev",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/1999/xhtml/vocab#next",
+              "curie": "xhtml:next",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "next",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://data.europa.eu/m8g/playsRole",
+              "curie": "cv:playsRole",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Plays Role",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://data.europa.eu/m8g/hasAddress",
+              "curie": "cv:hasAddress",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Has Address",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "curie": "skos:prefLabel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Preferred Label"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/spatial",
+              "curie": "dct:spatial",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Spatial",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "ContactURI",
+          "rdfTypes": [
+            {
+              "uri": "http://schema.org/ContactPoint",
+              "curie": "schema:ContactPoint"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://schema.org/email",
+              "curie": "schema:email",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "email"
+              }
+            },
+            {
+              "uri": "http://schema.org/telephone",
+              "curie": "schema:telephone",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Telephone"
+              }
+            },
+
+            {
+              "uri": "http://schema.org/hoursAvailable",
+              "curie": "schema:hoursAvailable",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Hours Available",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        },
+		{
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "ChangeEventURI",
+          "rdfTypes": [
+            {
+              "uri": "http://www.w3.org/ns/org#ChangeEvent",
+              "curie": "org:ChangeEvent"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/ns/org#resultingOrganization",
+              "curie": "org:resultingOrganization",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "resultingOrganization"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/org#resultedFrom",
+              "curie": "org:resultedFrom",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "resultedFrom"
+              }
+            },
+
+            {
+              "uri": "http://www.w3.org/ns/org#originalOrganization",
+              "curie": "org:originalOrganization",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "originalOrganization",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+			{
+              "uri": "http://www.w3.org/ns/org#changedBy",
+              "curie": "org:changedBy",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "changedBy",
+                "rdfTypes": [],
+                "links": []
+              }
+			  },
+			{
+              "uri": "http://purl.org/vocab/cpsv#implements",
+              "curie": "cpsv:implements",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "implements",
+                "rdfTypes": [],
+                "links": []
+              }
+			},
+			{
+              "uri": "http://data.europa.eu/m8g/hasFormalFramework",
+              "curie": "cv:hasFormalFramework",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "hasFormalFramework",
+                "rdfTypes": [],
+                "links": []
+              }
+			}		
+          ]
+        },
+		{
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "FormalFrameworkURI",
+          "rdfTypes": [
+            {
+              "uri": "http://purl.org/vocab/cpsv#FormalFramework",
+              "curie": "cpsv: FormalFramework"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://schema.org/name",
+              "curie": "schema:name",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Name"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/ns/org#identifier",
+              "curie": "org:Identifier",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "Identifier"
+              }
+            },
+
+            {
+              "uri": "http://purl.org/vocab/cpsv#implements",
+              "curie": "cpsv:implements",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "implements",
+                "rdfTypes": [],
+                "links": []
+              }
+			},
+			{
+              "uri": "http://data.europa.eu/m8g/hasFormalFramework",
+              "curie": "cv:hasFormalFramework",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "hasFormalFramework",
+                "rdfTypes": [],
+                "links": []
+              }
+			}		
+          ]
+        }
+    
+      ]
+    }
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column altLabel at index 27 based on column Plays Role using expression grel:value",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "altLabel",
+    "columnInsertIndex": 27,
+    "baseColumnName": "Plays Role",
+    "expression": "grel:value",
+    "onError": "set-to-blank"
+  }
+]
