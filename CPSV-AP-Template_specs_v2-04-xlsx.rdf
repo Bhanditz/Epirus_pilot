@@ -20,19 +20,20 @@
 
 <rdf:Description rdf:about="http://service.gov/service/123">
 	<rdf:type rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
-	<dct:title>Text</dct:title>
-	<dct:description>Text</dct:description>
-	<dct:language rdf:resource="http://service.gov/languages/EN"/>
-	<dcat:keyword>Text</dcat:keyword>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Greek Text</dct:title>
+	<dct:description xml:lang="en">Text</dct:description>
+	<dct:description xml:lang="el">Text</dct:description>
+	<dcat:keyword xml:lang="en">Text</dcat:keyword>
+	<dcat:keyword xml:lang="el">Text</dcat:keyword>
 	<cv:sector rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<dct:type rdf:resource="http://127.0.0.1:3362/Concept"/>
-	<dct:language rdf:resource="http://service.gov/languages/FR"/>
 	<adms:status rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<cv:isGroupedBy rdf:resource="http://127.0.0.1:3362/Event"/>
 	<dct:requires rdf:resource="http://127.0.0.1:3362/PublicService"/>
 	<dct:relation rdf:resource="http://127.0.0.1:3362/PublicService"/>
 	<cv:hasCriterion rdf:resource="http://127.0.0.1:3362/CriterionRequirement"/>
-	<cv:hasCompetentAuthority rdf:resource="http://127.0.0.1:3362/PublicOrganisation"/>
+	<cv:hasCompetentAuthority rdf:resource="http://127.0.0.1:3362/Text"/>
 	<cv:hasParticipation rdf:resource="http://127.0.0.1:3362/Participation"/>
 	<cpsv:hasInput rdf:resource="http://127.0.0.1:3362/Evidence"/>
 	<cv:hasFormalFramework rdf:resource="http://127.0.0.1:3362/FormalFramework"/>
@@ -46,71 +47,70 @@
 	<cv:isDescribedAt rdf:resource="http://127.0.0.1:3362/PublicServiceDataset"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://service.gov/languages/EN">
-	<rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
-	<rdfs:label>English</rdfs:label>
-	<dct:description>Description of the service</dct:description>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://service.gov/languages/FR">
-	<rdf:type rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
-	<rdfs:label>French</rdfs:label>
-	<dct:description>Provision of the service</dct:description>
-</rdf:Description>
-
 <rdf:Description rdf:about="http://service.gov/businessevent/123">
 	<rdf:type rdf:resource="http://data.europa.eu/m8g/BusinessEvent"/>
-	<dct:title>Text</dct:title>
-	<dct:description>Text</dct:description>
-	<dct:type rdf:resource="http://127.0.0.1:3362/Text"/>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Text</dct:title>
+	<dct:description xml:lang="en">Text</dct:description>
+	<dct:description xml:lang="el">Text</dct:description>
+	<dct:type rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<dct:relation rdf:resource="http://127.0.0.1:3362/Public+Service"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://service.gov/lifeevent/123">
 	<rdf:type rdf:resource="http://data.europa.eu/m8g/LifeEvent"/>
-	<dct:title>Text</dct:title>
-	<dct:description>Text</dct:description>
-	<dct:type rdf:resource="http://127.0.0.1:3362/Text"/>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Text</dct:title>
+	<dct:description xml:lang="en">Text</dct:description>
+	<dct:description xml:lang="el">Text</dct:description>
 	<dct:relation rdf:resource="http://127.0.0.1:3362/Public+Service"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://service.gov/publicservicedataset/123">
 	<rdf:type rdf:resource="http://data.europa.eu/m8g/PublicServiceDataset"/>
 	<dct:publisher rdf:resource="http://127.0.0.1:3362/Agent"/>
-	<dct:title>Text</dct:title>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Text</dct:title>
 	<dcat:landingPage rdf:resource="http://127.0.0.1:3362/Document"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://service.gov/participation/123">
 	<rdf:type rdf:resource="http://data.europa.eu/m8g/Participation"/>
-	<dct:description>Text</dct:description>
+	<dct:description xml:lang="en">Text</dct:description>
+	<dct:description xml:lang="el">Text</dct:description>
 	<cv:role rdf:resource="http://127.0.0.1:3362/Concept"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://service.gov/criterionrequirement/123">
 	<rdf:type rdf:resource="http://data.europa.eu/m8g/CriterionRequirement"/>
-	<dct:title>Criterion</dct:title>
-	<dct:type rdf:resource="http://127.0.0.1:3362/Text"/>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Text</dct:title>
+	<dct:type rdf:resource="http://127.0.0.1:3362/Concept"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://service.gov/evidence/123">
-	<dct:title>Evidence</dct:title>
-	<dct:description>Text</dct:description>
-	<dct:type rdf:resource="http://127.0.0.1:3362/Text"/>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Text</dct:title>
+	<dct:description xml:lang="en">Text</dct:description>
+	<dct:description xml:lang="el">Text</dct:description>
+	<dct:type rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<foaf:page rdf:resource="http://127.0.0.1:3362/Document"/>
 	<dct:language rdf:resource="http://127.0.0.1:3362/Concept"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://service.gov/output/123">
-	<dct:title>Output</dct:title>
-	<dct:description>Output</dct:description>
-	<dct:type rdf:resource="http://127.0.0.1:3362/Output"/>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Text</dct:title>
+	<dct:description xml:lang="en">Text</dct:description>
+	<dct:description xml:lang="el">Text</dct:description>
+	<dct:type rdf:resource="http://127.0.0.1:3362/Concept"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://service.gov/cost/123">
 	<cv:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">Number</cv:value>
 	<cv:currency rdf:resource="http://127.0.0.1:3362/Concept"/>
-	<dct:description>Text</dct:description>
+	<dct:description xml:lang="en">Text</dct:description>
+	<dct:description xml:lang="el">Text</dct:description>
 	<cv:isDefinedBy rdf:resource="http://127.0.0.1:3362/PublicOrganisation"/>
 	<cv:ifAccessedThrough rdf:resource="http://127.0.0.1:3362/Channel"/>
 </rdf:Description>
@@ -120,7 +120,8 @@
 	<cv:ownedBy rdf:resource="http://127.0.0.1:3362/PublicOrganisation"/>
 	<dct:type rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<cpsv:hasInput rdf:resource="http://127.0.0.1:3362/Evidence"/>
-	<schema:openingHours>Text</schema:openingHours>
+	<schema:openingHours xml:lang="en">Text</schema:openingHours>
+	<schema:openingHours xml:lang="el">Text</schema:openingHours>
 	<schema:hoursAvailable rdf:resource="http://127.0.0.1:3362/Opening+Hours+Specification"/>
 </rdf:Description>
 
@@ -130,42 +131,52 @@
 	<schema:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">Text</schema:validThrough>
 	<schema:opens rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">Text</schema:opens>
 	<schema:closes rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">Text</schema:closes>
-	<schema:dayOfWeek rdf:resource="http://127.0.0.1:3362/Text"/>
+	<schema:dayOfWeek rdf:resource="http://127.0.0.1:3362/Concept"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="cpsv:Rule">
+<rdf:Description rdf:about="http://service.gov/rule/123/">
 	<rdf:type rdf:resource="http://purl.org/vocab/cpsv#Rule"/>
-	<dct:description>Text</dct:description>
+	<dct:description xml:lang="en">Text</dct:description>
+	<dct:description xml:lang="el">Text</dct:description>
 	<dct:language rdf:resource="http://127.0.0.1:3362/Concept"/>
-	<dct:title>Text</dct:title>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Text</dct:title>
 	<cpsv:implements rdf:resource="http://127.0.0.1:3362/Formal+Framework"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="cpsv:FormalFramework">
+<rdf:Description rdf:about="http://service.gov/formalframework/123">
 	<rdf:type rdf:resource="http://purl.org/vocab/cpsv#FormalFramework"/>
-	<dct:title>Text</dct:title>
-	<dct:description>Text</dct:description>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Text</dct:title>
+	<dct:description xml:lang="en">Text</dct:description>
+	<dct:description xml:lang="el">Text</dct:description>
 	<eli:language rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<adms:status rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<cv:subject rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<cv:territorialApplication rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<dct:type rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<dct:relation rdf:resource="http://127.0.0.1:3362/FormalFramework"/>
-	<schema:name>Text</schema:name>
+	<schema:name xml:lang="en">Text</schema:name>
+	<schema:name xml:lang="el">Text</schema:name>
 </rdf:Description>
 
-<rdf:Description rdf:about="dct:Agent">
+<rdf:Description rdf:about="http://service.gov/agent/123">
 	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
-	<dct:title>Text</dct:title>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Text</dct:title>
 	<cv:playsRole rdf:resource="http://127.0.0.1:3362/Participation"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="cv:PublicOrganisation">
+<rdf:Description rdf:about="http://service.gov/publicorganisation/123">
 	<rdf:type rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
-	<dct:title>Text</dct:title>
-	<skos:altLabel>Text</skos:altLabel>
-	<org:identifier>Text</org:identifier>
-	<dct:description>Text</dct:description>
+	<dct:title xml:lang="en">Text</dct:title>
+	<dct:title xml:lang="el">Text</dct:title>
+	<skos:altLabel xml:lang="en">Text</skos:altLabel>
+	<skos:altLabel xml:lang="el">Text</skos:altLabel>
+	<org:identifier xml:lang="en">Text</org:identifier>
+	<org:identifier xml:lang="el">Text</org:identifier>
+	<dct:description xml:lang="en">Text</dct:description>
+	<dct:description xml:lang="el">Text</dct:description>
 	<dct:spatial rdf:resource="http://127.0.0.1:3362/Concept"/>
 	<org:purpose rdf:resource="http://127.0.0.1:3362/Text"/>
 	<org:classification rdf:resource="http://127.0.0.1:3362/Text"/>
@@ -184,7 +195,8 @@
 	<xhtml:next rdf:resource="http://127.0.0.1:3362/next"/>
 	<cv:playsRole rdf:resource="http://127.0.0.1:3362/Participation"/>
 	<cv:hasAddress rdf:resource="http://127.0.0.1:3362/Address"/>
-	<skos:prefLabel>Text</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Text</skos:prefLabel>
+	<skos:prefLabel xml:lang="el">Text</skos:prefLabel>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://service.gov/changeevent/123">
@@ -194,16 +206,7 @@
 	<org:originalOrganization rdf:resource="http://127.0.0.1:3362/PublicOrganization"/>
 	<org:changedBy rdf:resource="http://127.0.0.1:3362/PublicOrganization"/>
 	<cpsv:implements rdf:resource="http://127.0.0.1:3362/Document"/>
-	<cv:hasFormalFramework rdf:resource="http://127.0.0.1:3362/FormalFramework"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://service.gov/formalframework/123">
-	<rdf:type rdf:resource="http://purl.org/vocab/cpsv#FormalFramework"/>
-	<dct:title>Text</dct:title>
-	<schema:name>Text</schema:name>
-	<org:identifier rdf:resource="http://127.0.0.1:3362/Text"/>
-	<cpsv:implements rdf:resource="http://127.0.0.1:3362/Document"/>
-	<cv:hasFormalFramework rdf:resource="http://127.0.0.1:3362/FormalFramework"/>
+	<cv:hasFormalFramework rdf:resource="http://service.gov/formalframework/123"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://service.gov/contactpoint/123">
